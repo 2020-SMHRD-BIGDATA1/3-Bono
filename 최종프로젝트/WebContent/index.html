@@ -5,154 +5,491 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Astral by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/style.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
-    	<script src="assets/js/script.js"></script>
-	</head>
-	<body class="is-preload">
-		
-		<!-- Wrapper-->
-			<div id="wrapper">
+<head>
+<title>Astral by HTML5 UP</title>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<noscript>
+	<link rel="stylesheet" href="assets/css/noscript.css" />
+</noscript>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+<script src="assets/js/script.js"></script>
+</head>
+<style>
+ .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 500px;
+            top: 0;
+            width: 730px; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: white; /* Black w/ opacity */
+            padding: 0 500px 0 0;
+             
+        }
+    
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%; /* Could be more or less, depending on screen size */                          
+        }
+        /* The Close Button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+         #container { 
+  display: grid; 
+  grid-template-areas: 
+     
+    'main  main   main  right' 
+    'left  left  left right'
+    'header  header  header  header'
+    'footer  footer  footer  footer'; 
+  grid-gap: 10px; 
+  background-color: white; 
+  padding: 10px; 
+} 
 
-				<!-- Nav -->
-					<nav id="nav">
-					
-						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#work"><span>Work</span><img src="images/이미지 분류.png" alt="" /></a>
-						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-						<a href="#Calendar"><span>Calendar</span><img src="images/캘린더.png" alt="" /></a>
-						<video autoplay loop muted>
-        					<source src="highway-loop.mp4" type="video/mp4" />
-        				</video>
-					</nav>
+header1 { grid-area: header; width:700px;} 
+div1  { grid-area: right; width: 390px; height: 310px; } 
+main1 { grid-area: main; width: 300px; height: 150px; } 
+aside1  { grid-area: left; width: 300px; height: 150px; } 
+footer1 { grid-area: footer; width:700px;} 
 
-				<!-- Main -->
-					<div id="main">
-									
-						<!-- Me -->
-							<article id="home" class="panel intro">
-								<header>
-									<h1>포로링</h1>
-									<div class="typing-txt">
-										<ul>
-											<li>사진을 효율적으로 찾아가세요</li>
-											<li>원하는 인물 사진을 빠르게 찾아가세요</li>
-											<li>사진관리를 편하게 관리하세요</li>
-										</ul>
-									</div>
-									<p class="typing"></h1>
-									<p><marquee behavior=alternate></marquee></p>									
-								</header>
-								<a href="#work" class="jumplink pic">
-									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-									<img src="images/이미지1.jpg" alt="" />
-								</a>
-								
-							</article>
+#container > * { 
+  background-color: #DDD; 
+  text-align: center; 
+  padding: 0px 0; 
+} 
 
-						<!-- Work -->
-							<article id="work" class="panel">
-								<header>
-									<h2>Work</h2>
-								</header>
-								<p>
-									Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-									luctus elit eget interdum.
-								</p>
-								<section>
-									<div class="row">
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
-										</div>
-									</div>
-								</section>
-							</article>
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
 
-						<!-- Contact -->
-							<article id="contact" class="panel">
-								<header>
-									<h2>Contact Me</h2>
-								</header>
-								<form action="#" method="post">
-									<div>
-										<div class="row">
-											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" value="Send Message" />
-											</div>
-										</div>
-									</div>
-								</form>
-							</article>
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
 
-					</div>
-					
-				<!-- Footer -->
-					<div id="footer">
-						<ul class="copyright">
-							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	background-color: #fafafa;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+p{
+	font-size: 15px;
+	font-color: #666;
+	padding: 30px 0 0 0;
+	
+
+}
+
+.tm-btn-3{
+	background-color: #666768;
+	width: 700px;
+	height: 80px;
+
+}
+
+.tm-btn-2 {
+    background-color: #666768;
+    margin: 0 0 25px 0;
+    width: 80px;
+    height: 25px;
+       
+
+
+    
+}
+.tm-btn3 {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 30px;
+    border: none;
+    background-color: #E2AB9A;
+    color: white;
+}
+
+.tm-btn2 {
+    display: inline;
+
+    padding: 15px 40px;
+    font-size: 20px;
+    border: none;
+    background-color: #E2AB9A;
+    color: white;
+   
+
+}
+a {
+    color: #666;
+}
+a {
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    outline: none;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+a2 {
+    color: #666;
+    
+}
+a2 {
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 15px;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    outline: none;
+}
+user agent stylesheet
+a2:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+p2 {
+	color: white;
+	font-size: 50px;
+	padding: 50px 0 0 0;
+	
+
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 18px;
+    overflow-x: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    outline: none;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    outline: none;
+
+
+</style>
+<body class="is-preload">
+
+	<!-- Wrapper-->
+	<div id="wrapper">
+
+		<!-- Nav -->
+		<nav id="nav">
+
+			<a href="#" class="icon solid fa-home"><span>Home</span></a> <a
+				href="#work"><span>Work</span><img src="images/이미지 분류.png"
+				alt="" /></a> <a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+			<a href="#Calendar"><span>Calendar</span><img
+				src="images/캘린더.png" alt="" /></a>
+			<video autoplay loop muted>
+				<source src="highway-loop.mp4" type="video/mp4" />
+			</video>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Me -->
+			<article id="home" class="panel intro">
+				<header>
+					<h1>포로링</h1>
+					<div class="typing-txt">
+						<ul>
+							<li>사진을 효율적으로 찾아가세요</li>
+							<li>원하는 인물 사진을 빠르게 찾아가세요</li>
+							<li>사진관리를 편하게 관리하세요</li>
 						</ul>
 					</div>
-					
-			</div>
+					<p class="typing">
+					<p>
+						<marquee behavior=alternate></marquee>
+					</p>
+				</header>
+				<a href="#work" class="jumplink pic"> <span
+					class="arrow icon solid fa-chevron-right"><span>See
+							my work</span></span> <img src="images/이미지1.jpg" alt="" />
+				</a>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			</article>
 
-	</body>
+			<!-- Work -->
+			<article id="work" class="panel">
+				<header>
+					<h2>Work</h2>
+				</header>
+				<p>Phasellus enim sapien, blandit ullamcorper elementum eu,
+					condimentum eu elit. Vestibulum ante ipsum primis in faucibus orci
+					luctus et ultrices posuere cubilia luctus elit eget interdum.</p>
+				<section>
+					<div class="row">
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic01.jpg"
+								alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic02.jpg"
+								alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic03.jpg"
+								alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic04.jpg"
+								alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic05.jpg"
+								alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic06.jpg"
+								alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic07.jpg"
+								alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic08.jpg"
+								alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic09.jpg"
+								alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic10.jpg"
+								alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic11.jpg"
+								alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic12.jpg"
+								alt=""></a>
+						</div>
+					</div>
+				</section>
+			</article>
+
+			<!-- Contact -->
+			<article id="contact" class="panel">
+				<!-- Trigger/Open The Modal -->
+				<button id="myBtn">Open Modal</button>
+
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+					<center>
+						<div id="container">
+
+							<div1></div1>
+							<main1> <p2>BONOBONO</p2> </main1>
+							<aside1> <div3 class="tm-bg-color-7 tm-em-box">
+							<p class="tm-text-color-2">분류할 사진을 업로드해주세요</p>
+							<br>
+							<a href="#gallery" class="tm-btn2 tm-btn-2">upload photo</a> </div3> </aside1>
+							<header1> <a href="#gallery" class="tm-btn3 tm-btn-3">Click
+								for finding same person</a> </header1>
+							<footer1> <div2 class="gallery"> <div2
+								class="gallery-item"> <img class="gallery-image"
+								src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop"
+								alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+							</div2> <div2 class="gallery-item"> <img class="gallery-image"
+								src="https://images.unsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop"
+								alt="sunset behind San Francisco city skyline"> </div2> <div2
+								class="gallery-item"> <img class="gallery-image"
+								src="https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop"
+								alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+							</div2> <div2 class="gallery-item"> <img class="gallery-image"
+								src="https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=500&h=500&fit=crop"
+								alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+							</div2> <div2 class="gallery-item"> <img class="gallery-image"
+								src="https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=500&h=500&fit=crop"
+								alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+							</div2> <div2 class="gallery-item"> <img class="gallery-image"
+								src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop"
+								alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+							</div2> <div2 class="gallery-item"> <img class="gallery-image"
+								src="https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop"
+								alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+							</div2> <div2 class="gallery-item"> <img class="gallery-image"
+								src="https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=500&h=500&fit=crop"
+								alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+							</div2> <div2 class="gallery-item"> <img class="gallery-image"
+								src="https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=500&h=500&fit=crop"
+								alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+							</div2> <div2 class="gallery-item"> <img class="gallery-image"
+								src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop"
+								alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+							</div2></footer1>
+
+						</div>
+					</center>
+				</div>
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<p>Some text in the Modal..</p>
+				</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("myBtn");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on the button, open the modal 
+			btn.onclick = function() {
+				modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+				modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+		</script>
+		</article>
+
+	</div>
+
+	<!-- Footer -->
+	<div id="footer">
+		<ul class="copyright">
+			<li>&copy; Untitled.</li>
+			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+		</ul>
+	</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
 </html>
